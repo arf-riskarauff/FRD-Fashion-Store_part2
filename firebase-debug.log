@@ -1,0 +1,93 @@
+[debug] [2026-05-23T06:44:48.948Z] ----------------------------------------------------------------------
+[debug] [2026-05-23T06:44:48.954Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only storage
+[debug] [2026-05-23T06:44:48.955Z] CLI Version:   15.18.0
+[debug] [2026-05-23T06:44:48.955Z] Platform:      win32
+[debug] [2026-05-23T06:44:48.955Z] Node Version:  v25.8.2
+[debug] [2026-05-23T06:44:48.955Z] Time:          Sat May 23 2026 12:14:48 GMT+0530 (India Standard Time)
+[debug] [2026-05-23T06:44:48.955Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-23T06:44:51.140Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-23T06:44:51.141Z] > authorizing via signed-in user (23da2-1137@sltc.ac.lk)
+[debug] [2026-05-23T06:44:51.141Z] [iam] checking project frd-fashion-store-app for permissions ["firebase.projects.get","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2026-05-23T06:44:51.142Z] Checked if tokens are valid: false, expires at: 1779518083911
+[debug] [2026-05-23T06:44:51.143Z] Checked if tokens are valid: false, expires at: 1779518083911
+[debug] [2026-05-23T06:44:51.143Z] > refreshing access token with scopes: []
+[debug] [2026-05-23T06:44:51.146Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-05-23T06:44:51.146Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-05-23T06:44:52.357Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-05-23T06:44:52.358Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-05-23T06:44:52.374Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions [none]
+[debug] [2026-05-23T06:44:52.374Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions  x-goog-user-project=frd-fashion-store-app
+[debug] [2026-05-23T06:44:52.374Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions {"permissions":["firebase.projects.get","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2026-05-23T06:44:54.141Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions 200
+[debug] [2026-05-23T06:44:54.141Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions {"permissions":["firebase.projects.get","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[info] 
+[info] === Deploying to 'frd-fashion-store-app'...
+[info] 
+[info] i  deploying storage 
+[info] i  storage: ensuring required API firebasestorage.googleapis.com is enabled... 
+[debug] [2026-05-23T06:44:54.143Z] Checked if tokens are valid: true, expires at: 1779522291358
+[debug] [2026-05-23T06:44:54.144Z] Checked if tokens are valid: true, expires at: 1779522291358
+[debug] [2026-05-23T06:44:54.144Z] >>> [apiv2][query] GET https://firebasestorage.googleapis.com/v1alpha/projects/frd-fashion-store-app/defaultBucket [none]
+[debug] [2026-05-23T06:44:56.139Z] <<< [apiv2][status] GET https://firebasestorage.googleapis.com/v1alpha/projects/frd-fashion-store-app/defaultBucket 404
+[debug] [2026-05-23T06:44:56.140Z] <<< [apiv2][body] GET https://firebasestorage.googleapis.com/v1alpha/projects/frd-fashion-store-app/defaultBucket {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[error] 
+[error] Error: Firebase Storage has not been set up on project 'frd-fashion-store-app'. Go to https://console.firebase.google.com/project/frd-fashion-store-app/storage and click 'Get Started' to set up Firebase Storage.
+[debug] [2026-05-24T05:04:00.985Z] ----------------------------------------------------------------------
+[debug] [2026-05-24T05:04:00.992Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only firestore:rules
+[debug] [2026-05-24T05:04:00.992Z] CLI Version:   15.18.0
+[debug] [2026-05-24T05:04:00.992Z] Platform:      win32
+[debug] [2026-05-24T05:04:00.992Z] Node Version:  v25.8.2
+[debug] [2026-05-24T05:04:00.992Z] Time:          Sun May 24 2026 10:34:00 GMT+0530 (India Standard Time)
+[debug] [2026-05-24T05:04:00.992Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-24T05:04:03.209Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-24T05:04:03.211Z] > authorizing via signed-in user (23da2-1137@sltc.ac.lk)
+[debug] [2026-05-24T05:04:03.212Z] [iam] checking project frd-fashion-store-app for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2026-05-24T05:04:03.213Z] Checked if tokens are valid: false, expires at: 1779522291358
+[debug] [2026-05-24T05:04:03.214Z] Checked if tokens are valid: false, expires at: 1779522291358
+[debug] [2026-05-24T05:04:03.214Z] > refreshing access token with scopes: []
+[debug] [2026-05-24T05:04:03.216Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-05-24T05:04:03.216Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-05-24T05:04:04.737Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-05-24T05:04:04.737Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-05-24T05:04:04.768Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions [none]
+[debug] [2026-05-24T05:04:04.768Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions  x-goog-user-project=frd-fashion-store-app
+[debug] [2026-05-24T05:04:04.768Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2026-05-24T05:04:06.616Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions 200
+[debug] [2026-05-24T05:04:06.616Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frd-fashion-store-app:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'frd-fashion-store-app'...
+[info] 
+[info] i  deploying firestore 
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2026-05-24T05:04:06.619Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:06.619Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:06.619Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/frd-fashion-store-app/databases/(default) [none]
+[debug] [2026-05-24T05:04:07.668Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/frd-fashion-store-app/databases/(default) 200
+[debug] [2026-05-24T05:04:07.668Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/frd-fashion-store-app/databases/(default) {"name":"projects/frd-fashion-store-app/databases/(default)","uid":"2682e62f-112e-4536-9bf5-b263edaeb9aa","createTime":"2026-05-13T18:04:59.186140Z","updateTime":"2026-05-13T18:04:59.186140Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2026-05-24T04:04:07.488258Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"realtimeUpdatesMode":"REALTIME_UPDATES_MODE_ENABLED","etag":"INHgxYiT0ZQDMLfgh+XvtpQD"}
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2026-05-24T05:04:07.669Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:07.669Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:07.669Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app:test [none]
+[debug] [2026-05-24T05:04:07.669Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app:test [omitted]
+[debug] [2026-05-24T05:04:10.540Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app:test 200
+[debug] [2026-05-24T05:04:10.541Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2026-05-24T05:04:10.541Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:10.541Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:10.542Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app/releases pageSize=10&pageToken=
+[debug] [2026-05-24T05:04:12.497Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app/releases 200
+[debug] [2026-05-24T05:04:12.498Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app/releases {"releases":[{"name":"projects/frd-fashion-store-app/releases/cloud.firestore","rulesetName":"projects/frd-fashion-store-app/rulesets/68495f67-0a7e-4132-b188-6412049a655d","createTime":"2026-05-13T18:05:06.864921Z","updateTime":"2026-05-19T16:01:03.264146Z"}]}
+[debug] [2026-05-24T05:04:12.498Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:12.498Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:12.498Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app/rulesets/68495f67-0a7e-4132-b188-6412049a655d [none]
+[debug] [2026-05-24T05:04:14.307Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app/rulesets/68495f67-0a7e-4132-b188-6412049a655d 200
+[debug] [2026-05-24T05:04:14.307Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app/rulesets/68495f67-0a7e-4132-b188-6412049a655d [omitted]
+[info] i  firestore: uploading rules firestore.rules... 
+[debug] [2026-05-24T05:04:14.308Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:14.308Z] Checked if tokens are valid: true, expires at: 1779602643737
+[debug] [2026-05-24T05:04:14.309Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app/rulesets [none]
+[debug] [2026-05-24T05:04:14.309Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app/rulesets [omitted]
+[debug] [2026-05-24T05:04:15.688Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/frd-fashion-store-app/rulesets 200
