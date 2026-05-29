@@ -1,0 +1,54 @@
+name:  frd_fashion_store_app
+description: FRD fashion store- E-Commerce Flutter Application
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.2
+  http: ^1.6.0
+  firebase_core: ^4.9.0
+  firebase_auth: ^6.1.5
+  cloud_firestore: ^6.0.4
+  firebase_storage: ^13.0.4
+  image_picker: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: sans_regular
+      fonts:
+        - asset: assets/fonts/sans_regular.ttf
+    - family: sans_semibold
+      fonts:
+        - asset: assets/fonts/sans_semibold.ttf
+    - family: sans_bold
+      fonts:
+        - asset: assets/fonts/sans_bold.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/sans_regular.ttf
+          weight: 400
+        - asset: assets/fonts/sans_semibold.ttf
+          weight: 600
+        - asset: assets/fonts/sans_bold.ttf
+          weight: 700
